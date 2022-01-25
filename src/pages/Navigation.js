@@ -7,7 +7,6 @@ function Navigation() {
     
  const [showSidebar, setShowSidebar] = useState(false)
 
- console.log(showSidebar)
 
     return (
         <>

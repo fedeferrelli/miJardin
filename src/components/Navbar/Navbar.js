@@ -26,12 +26,13 @@ const Navbar = ({showSidebar, setShowSidebar}) =>{
             <ul className='hidden sm:flex' >
 
                 <li className='ml-1 h-full' > 
-                    <LinkScroll to='about' className='flex items-center justify-center cursor-pointer   border-2 border-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-2 '> Quienes somos     
+                    <LinkScroll to='about' className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl'> Quienes somos     
                     </LinkScroll> 
                 </li>
 
-                <li className='ml-1'> <LinkScroll to='servicios' className='flex items-center justify-center cursor-pointer   border-4 border-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 '> Servicios  </LinkScroll> </li>
-                <li className='ml-1'> <LinkScroll to='contacto' className='flex items-center justify-center cursor-pointer   border-4 border-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 '> Contacto  </LinkScroll> </li>
+                <li className='ml-1'> <LinkScroll to='servicios' className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl' > Servicios  </LinkScroll> </li>
+
+                <li className='ml-1'> <LinkScroll to='contacto' className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl'> Contacto  </LinkScroll> </li>
                 
             </ul>
 
