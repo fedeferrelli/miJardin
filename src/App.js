@@ -1,8 +1,14 @@
 
-import Navigation from './pages/Navigation'
+
 
 import { BrowserRouter as Router } from 'react-router-dom';
+
+import Navigation from './pages/Navigation'
 import Home from './pages/Home';
+import About from './pages/About';
+import Servicios from './pages/Servicios';
+
+
 
 
 function App() {
@@ -12,8 +18,11 @@ function App() {
       
       <Navigation />
 
-      <Home />
+      <Home  />
 
+      <About/>
+
+      <Servicios/>
 
 
     </Router>

@@ -3,9 +3,9 @@ import imagen from '../images/garden2.jpg';
 
 function Home() {
     return (
-        <div  className='w-full bg-contain relative -mt-20 -z-10'>
+        <div  className='w-full  bg-gray-200 relative -mt-0 -z-10 h-[30rem] sm:h-auto'>
 
-        <img src={imagen} alt='gardening'  className=' sm:w-full max-h-screen h-96 sm:h-auto  saturate-100 opacity-95 object-cover'/>
+        <img src={imagen} alt='gardening'  className=' sm:w-full max-h-screen h-full sm:h-auto  saturate-100 opacity-95 object-cover'/>
 
         <div className='absolute top-1  right-0 h-full w-1/2 flex'>
 
