@@ -4,10 +4,14 @@ import {FaBars} from 'react-icons/fa';
 import {RiLeafFill} from 'react-icons/ri';
 import {FaCanadianMapleLeaf} from 'react-icons/fa';
 
-import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkScroll, animateScroll } from 'react-scroll'
 
 
 const Navbar = ({showSidebar, setShowSidebar}) =>{
+
+    /* var scroll = Scroll.animateScroll; */
+
+    
 
     return(
 
@@ -15,8 +19,10 @@ const Navbar = ({showSidebar, setShowSidebar}) =>{
 
             <div className='flex flex-row '>
           
-                <div className='w-14 h-14 bg-gray-100 rounded-full border-2 border-green-400 flex m-auto'> 
-                    <FaCanadianMapleLeaf className='m-auto text-green-600 cursor-pointer h-10 w-10' /> 
+                <div className='w-14 h-14 bg-green-100 rounded-full border-2 border-green-800 flex m-auto'> 
+                    <FaCanadianMapleLeaf className='m-auto text-green-800 cursor-pointer h-10 w-10' 
+                    onClick={()=>animateScroll.scrollToTop()}
+                    /> 
                 </div>
 
                 <h1 className='m-auto ml-2 text-xl'>mi Jardín</h1>
@@ -28,7 +34,7 @@ const Navbar = ({showSidebar, setShowSidebar}) =>{
                 <li className='ml-1 h-full' > 
                     <LinkScroll  
                  
-                    activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500} 
+                    activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={1000} 
                     
                     className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl'> Quienes somos     
                     </LinkScroll> 
@@ -37,11 +43,14 @@ const Navbar = ({showSidebar, setShowSidebar}) =>{
                 <li className='ml-1'> 
                 <LinkScroll  
                 
-                activeClass="active" to="servicios" spy={true} smooth={true} offset={-80} duration={500}
+                activeClass="active" to="servicios" spy={true} smooth={true} offset={-80} duration={1000}
                 
                 className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl' > Servicios  </LinkScroll> </li>
 
-                <li className='ml-1'> <LinkScroll to='contacto' className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl'> Contacto  </LinkScroll> </li>
+                <li className='ml-1'> 
+                <LinkScroll  
+                activeClass="active" to="contacto" spy={true} smooth={true} offset={-80} duration={1000}
+                className='flex items-center justify-center cursor-pointer   border-y-4 border-b-transparent h-full decoration-0 mx-4  active:border-b-green-900 active:border-b-4 text-xl'> Contacto  </LinkScroll> </li>
                 
             </ul>
 

@@ -16,7 +16,7 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
 
                 <li className='flex flex-row justify-center' > 
                     <LinkScroll to='about'
-                    activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={500}
+                    activeClass="active" spy={true} smooth={true} offset={-80} duration={1500}
                     className='text-white flex items-center justify-center decoration-0 text-base'
                     onClick={()=>setShowSidebar(!showSidebar)}> Quienes somos     
                     </LinkScroll> 
@@ -24,11 +24,17 @@ const Sidebar = ({showSidebar, setShowSidebar}) => {
 
                 <li className=' flex flex-row justify-center'> 
                 <LinkScroll to='servicios' 
-                activeClass="active" to="servicios" spy={true} smooth={true} offset={-80} duration={500}
+                activeClass="active" spy={true} smooth={true} offset={-80} duration={1500}
                 className='text-white mt-8 flex items-center justify-center decoration-0'
                 onClick={()=>setShowSidebar(!showSidebar)}
                 > Servicios  </LinkScroll> </li>
-                <li className=' flex flex-row justify-center'> <LinkScroll to='contacto' className='text-white mt-8 flex items-center justify-center decoration-0'> Contacto  </LinkScroll> </li>
+
+
+                <li className=' flex flex-row justify-center'> 
+                <LinkScroll to='contacto' 
+                activeClass="active" spy={true} smooth={true} offset={-80} duration={1500}
+                className='text-white mt-8 flex items-center justify-center decoration-0'
+                onClick={()=>setShowSidebar(!showSidebar)}> Contacto  </LinkScroll> </li>
                 
             </ul>
 

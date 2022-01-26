@@ -3,13 +3,13 @@ import React from 'react'
 function Servicios() {
     return (
 
-        <div className=' bg-gray-200'>
+        <div className=' bg-gray-200 pb-8'>
 
         <div id='servicios' className='flex flex-col px-8 sm:flex-row justify-center'>
 
-            <div className=' m-auto my-12 shadow-lg shadow-gray-300 rounded-md border-gray-400 w-full sm:jusify-center sm:w-1/2 sm:mx-12 bg-white max-w-sm hover:scale-105 hover:shadow-2xl transition-all ease-in-out pb-4'>
+            <div className=' m-auto my-12 shadow-lg shadow-gray-300 rounded-2xl border-gray-400 w-full sm:jusify-center sm:w-1/2 sm:mx-12 bg-white max-w-sm sm:hover:-translate-y-2 hover:shadow-2xl transition-all ease-in-out pb-4'>
                 <div>
-                    <img src={require('../images/servicios1.jpg')} alt='servicios' className='h-24 rounded-t-md object-none w-full '/>    
+                    <img src={require('../images/servicios1.jpg')} alt='servicios' className='h-16 sm:h-48 rounded-t-2xl object-none w-full ' />    
                 </div>
 
                 <h1 className='font-bold text-xl sm:text-3xl text-center px-8 my-2 mb-6'>
@@ -26,9 +26,9 @@ function Servicios() {
 
             </div> 
 
-            <div className=' m-auto sm:my-12 mb-6 shadow-lg shadow-gray-300 rounded-md border-gray-400 w-full sm:jusify-center sm:w-1/2 sm:mx-12 bg-white max-w-sm hover:scale-105 hover:shadow-2xl transition-all ease-in-out pb-4'>
+            <div className=' m-auto sm:my-12 mb-6 shadow-lg shadow-gray-300 rounded-2xl border-gray-400 w-full sm:jusify-center sm:w-1/2 sm:mx-12 bg-white max-w-sm hover:-translate-y-2 hover:shadow-2xl transition-all ease-in-out pb-4'>
                 <div>
-                    <img src={require('../images/servicios2.jpg')} alt='servicios' className='h-24 rounded-t-md object-none w-full '/>    
+                    <img src={require('../images/servicios2.jpg')} alt='servicios' className='h-16 sm:h-48 rounded-t-2xl object-none w-full '/>    
                 </div>
 
                 <h1 className='font-bold text-xl sm:text-3xl text-center px-8 my-2 mb-6'>
@@ -59,7 +59,7 @@ function Servicios() {
                 <div className='rounded-full bg-gray-100 px-4 py-2 shadow-md m-1.5 border-gray-700'>
                 Poda de Formación
                 </div>
-                <div className='rounded-full bg-gray-100 px-4 py-2 shadow-md m-1.5 border-gray-700'>
+                <div className='rounded-full bg-gray-100 px-4 py-2 shadow-md m-1.5 border-gray-700 text-center'>
                 Tratamientos y Manejo Fitosanitario
                 </div>
                 <div className='rounded-full bg-gray-100 px-4 py-2 shadow-md m-1.5 border-gray-700'>
