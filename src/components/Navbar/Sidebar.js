@@ -8,7 +8,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 
 const Sidebar = ({showSidebar, setShowSidebar}) => {
     return (
-        <div   className='fixed z-50 w-full pb-8 bg-green-600 flex flex-row flex-wrap '   >
+        <div   className='fixed z-50 w-full pb-8 bg-green-700 flex flex-row flex-wrap '   >
        
        <div className=' h-20 w-full flex  px-2 mb-8 ' onClick={()=>setShowSidebar(!showSidebar)} > <AiOutlineClose className='w-10 h-10  m-auto mr-0' /> </div>
 

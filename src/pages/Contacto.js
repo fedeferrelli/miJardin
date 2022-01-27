@@ -32,7 +32,7 @@ function Contacto() {
 
             { w < 468 ?
 
-              <a href='https://api.whatsapp.com/send?phone=5492262574254&text=Hola,%20Hernán.%20Cómo%20estás?%20Me%20gustaría%20hecerte%20la%20siguiente%20consulta.%0D%0A%0D%0A' className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
+              <a href='https://api.whatsapp.com/send?phone=5492944669065&text=Hola,%20Fernando.%20Cómo%20estás?%20Me%20gustaría%20hecerte%20la%20siguiente%20consulta.%0D%0A%0D%0A' className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
               <FaWhatsapp className='text-green-900 text-3xl sm:text-4xl mr-2'/> +54 9 294 466-9065
               </a> :
 
@@ -43,12 +43,12 @@ function Contacto() {
 
             { w < 468 ?
 
-              <a href="tel:+5492262574254" className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
-              <FiPhone className='text-green-900 text-3xl sm:text-4xl mr-2'/> +54 9 294 466-9065
+              <a href="tel:+5492914620730" className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
+              <FiPhone className='text-green-900 text-3xl sm:text-4xl mr-2'/> +54 9 291 462-0730
               </a> :
 
               <div className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
-              <FiPhone className='text-green-900 text-3xl sm:text-4xl mr-2'/> +54 9 294 466-9065
+              <FiPhone className='text-green-900 text-3xl sm:text-4xl mr-2'/> +54 9 291 462-0730
               </div> 
             }
 
