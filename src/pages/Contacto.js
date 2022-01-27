@@ -8,6 +8,7 @@ import {MdOutlineMailOutline} from 'react-icons/md'
 
 import {FiPhone} from 'react-icons/fi'
 
+import { Fade, Rotate } from "react-awesome-reveal";
 
 
 function Contacto() {
@@ -21,7 +22,7 @@ function Contacto() {
        
        
 
-        <div className="w-full flex  justify-center items-center">
+        <Fade direction='left' className="w-full flex  justify-center items-center">
          <div className='flex flex-col p-12 sm:px-24  m-auto '>
             <h1 className="text-green-700 text-left uppercase font-bold text-xs sm:text-sm">
               Contacto
@@ -32,7 +33,7 @@ function Contacto() {
 
             { w < 468 ?
 
-              <a href='https://api.whatsapp.com/send?phone=5492944669065&text=Hola,%20Fernando.%20Cómo%20estás?%20Me%20gustaría%20hecerte%20la%20siguiente%20consulta.%0D%0A%0D%0A' className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
+              <a href='https://api.whatsapp.com/send?phone=5492944669065&text=Hola,%20Fernando.%20Cómo%20estás?%20Me%20gustaría%20hacerte%20la%20siguiente%20consulta.%0D%0A%0D%0A' className="mt-4 leading-tight  hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
               <FaWhatsapp className='text-green-900 text-3xl sm:text-4xl mr-2'/> +54 9 294 466-9065
               </a> :
 
@@ -53,16 +54,24 @@ function Contacto() {
             }
 
 
+
             <a href="mailto:femoreno45@gmail.com" className="mt-4 leading-tight hover:text-green-700 tracking-wider sm:text-lg flex flex-row justify-start items-center ">
               <MdOutlineMailOutline className='text-green-900 text-3xl sm:text-4xl mr-2'/> femoreno45@gmail.com 
             </a>
+
+
             
           </div>
-        </div>
+        </Fade>
 
+       
+      
         <div className=" w-full  flex flex-row pb-12 sm:pb-0  justify-center items-center ">
-          <img src={Image} alt="contacto" className="m-auto w-2/3 sm:w-1/2" />
+          <Fade direction='up' delay={1}>
+            <img src={Image} alt="contacto" className="m-auto w-2/3 sm:w-1/2" />
+          </Fade>
         </div>
+       
 
       </div>
     );

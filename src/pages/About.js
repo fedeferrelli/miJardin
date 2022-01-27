@@ -1,17 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import Image from '../images/about.svg'
+import Image from "../images/about.svg";
+
+import { Fade, Rotate } from "react-awesome-reveal";
 
 function About() {
-    return (
-      <div id="about" className="flex flex-col sm:flex-row  sm:h-[40rem]">
-       
-        <div className=" w-full  flex flex-row  pt-12 sm:pt-0  justify-center items-center">
+  return (
+    <div id="about" className="flex flex-col sm:flex-row  sm:h-[40rem]">
+      <div className="w-full  flex flex-row  pt-12 sm:pt-0  justify-center items-center">
+        <Fade direction="left" >
           <img src={Image} alt="about" className="m-auto w-2/3 sm:w-1/2 " />
-        </div>
+        </Fade>
+      </div>
 
-        <div className="w-full flex  justify-center items-center ">
-          <div className='flex flex-col p-12 sm:px-24  m-auto '>
+      <div className="w-full flex  justify-center items-center">
+        <Fade
+          direction="up"
+          className="flex flex-col p-12 sm:px-24  m-auto"
+        >
+          <div>
             <h1 className="text-green-700 text-left uppercase font-bold text-xs sm:text-sm">
               Nosotros
             </h1>
@@ -27,9 +34,10 @@ function About() {
               proyectos con una mirada sostenible y creativa.
             </p>
           </div>
-        </div>
+        </Fade>
       </div>
-    );
+    </div>
+  );
 }
 
-export default About
+export default About;
