@@ -58,9 +58,9 @@ function Servicios() {
 
             </div>   
 
-            <Fade duration={1000} className='flex flex-row flex-wrap justify-center sm:mx-48'>
+            {/* <Fade duration={1000} className='flex flex-row flex-wrap justify-center sm:mx-48'> */}
 
-            <div className='flex flex-row flex-wrap justify-center'>
+            <div className='flex flex-row flex-wrap justify-center sm:mx-48'>
                 <div className='rounded-full bg-gray-100 px-4 py-2 shadow-md m-1.5 border-gray-700'>
                 Forestación
                 </div>
@@ -81,7 +81,7 @@ function Servicios() {
                 Planes de Mejoras
                 </div>
                 </div>
-            </Fade>
+           {/*  </Fade> */}
         
         </div>
 
