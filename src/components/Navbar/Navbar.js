@@ -8,6 +8,8 @@ import { Link as LinkScroll, animateScroll } from "react-scroll";
 
 import { Fade, Rotate } from "react-awesome-reveal";
 
+import Logo from '../../images/favicon3.jpg'
+
 const Navbar = ({ showSidebar, setShowSidebar }) => {
   /* var scroll = Scroll.animateScroll; */
 
@@ -17,11 +19,14 @@ const Navbar = ({ showSidebar, setShowSidebar }) => {
     <div className="bg-gray-200 flex flex-row justify-between py-0 px-2 h-20 sm:h-20 z-40 fixed top-0 w-full">
       <div className="flex flex-row ">
        
-          <Rotate className="w-14 h-14 bg-green-100 rounded-full border-2 border-green-800 flex m-auto">
-            <FaCanadianMapleLeaf
+          <Rotate className="w-16 h-16 bg-green-100 rounded-full border-2 border-green-900 flex justify-center m-auto">
+        {/*     <FaCanadianMapleLeaf
               className="m-auto text-green-800 cursor-pointer h-10 w-10"
               onClick={() => animateScroll.scrollToTop()}
-            />
+            /> */}
+
+            <img src={Logo} alt="logo" className="m-auto text-green-900 w-full p-3"
+            onClick={() => animateScroll.scrollToTop()}/>
           </Rotate>
         
         <h1 className="m-auto ml-2 text-xl">mi Jardín</h1>

@@ -18,7 +18,7 @@ function Footer() {
 
             <h1 className='text-lg m-0 font-bold text-white'>mi Jardín</h1>
 
-            <h1 className='my-4 text-sm m-0 text-white'>Todos los derecho reservados. 2022</h1>
+            <h1 className='my-4 text-sm m-0 text-white'>Todos los derechos reservados. 2022</h1>
         </div>
     )
 }

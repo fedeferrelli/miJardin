@@ -33,7 +33,7 @@ function Home() {
               smooth={true}
               offset={-80}
               duration={1500}
-              className="bg-green-900 hover:bg-green-700 cursor-pointer rounded-full text-white text-center  sm:text-xl  px-0 p-4 w-1/2  sm:w-1/2 uppercase m-auto"
+              className="bg-green-900 hover:bg-green-700 cursor-pointer rounded-full text-white text-center  sm:text-xl  px-0 p-4 w-1/2  sm:w-auto sm:px-16 uppercase m-auto"
             >
               Contactanos
             </LinkScroll>
