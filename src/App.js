@@ -15,18 +15,18 @@ import Footer from "./pages/Footer";
 
 //const manes = [{name:'keith', edad: 45}, {name:'mick', edad: 40}, {name:'ron', edad: 5}]
 
-import manes from "./data";
+import data from "./data";
 
-console.log(manes);
+console.log(data);
 
 const Fede = () => {
   return (
     <>
       <h1>fede</h1>
 
-      {manes.map((man) => (
-        <li key={man.name}>
-          <Link to={`/manes/${man.name}`}>{man.name}</Link>
+      {data.map((man, i) => (
+        <li key={i}>
+          <Link to={`/manes/${i}`}> tester {i}</Link>
         </li>
       ))}
 
@@ -37,17 +37,19 @@ const Fede = () => {
 
 const What = () => {
   const { nombre } = useParams();
-  console.log(nombre);
-
-  const dataToPrint = manes.find((man) => man.name === nombre);
-  const { name, edad } = dataToPrint;
-  console.log(dataToPrint);
+  const fede = data[nombre];
+  console.log(fede);
 
   return (
     <>
-      <h1>{name}</h1>
-      <h1>{edad}</h1>
-
+      <h1 className="text-red-400 bg-yellow-500">{fede.transcription}</h1>
+      {fede.preguntas.map((preg) => {
+        return (
+          <>
+            <h1 key={preg.texto}>{preg.texto}</h1>
+          </>
+        );
+      })}
       <Link to="/">ir a home</Link>
     </>
   );
